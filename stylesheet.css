@@ -1,0 +1,338 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    display: block;
+    background-size: cover;
+    object-fit: cover;
+}
+.top{
+    background-color: darkred;
+    width: 100%;
+    padding: 4px;
+}
+.top p{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 15%;
+}
+header{
+    position: relative;
+}
+.header-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: darkred;
+    text-align: center;
+}
+.header-logo h1{
+    font-family: 'Yuji Mai', serif;
+}
+.header-img{
+    position: relative;
+}
+.header-img img{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.header-img::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("photo/温泉\　\　見る.jpg") no-repeat center;
+    background-size: auto 100%;
+}
+.header-text{
+    position: absolute;
+    top: 15px;
+    right: 10%;
+    writing-mode: vertical-rl;
+}
+.header-text h2{
+    display: inline-block;
+    background-color: #e9e9e9;
+    opacity: 0.8;
+    margin-left: 3px;
+    padding: 10px;
+    box-shadow: 10px 10px darkred;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.header-text h1{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    opacity: 0.8;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.red{
+    color:crimson;
+}
+.intro{
+    padding: 60px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.intro-text{
+    display: flex;
+    margin-bottom: 20px;
+}
+.intro-text h1{
+    font-size: 40px;
+}
+.intro-text span{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: darkred;
+}
+.intro h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: normal;
+    text-shadow: 0 0 3px #666;
+}
+.intro img{
+    width: 100%;
+}
+.intro p{
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 700px){
+    .item ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .item ul li{
+        padding: 20px;
+    }
+    .item ul li:first-child{
+        margin-bottom: 20px;
+    }
+}
+.item{
+    width: 90%;
+    margin: 30px auto;
+}
+.item ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.item ul li{
+    border: 5px solid blanchedalmond;
+    padding: 15px;
+}
+.item ul li p{
+    font-size: 13px;
+}
+.photo{
+    width:90%;
+    margin: 60px auto;
+}
+.photo ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+.photo ul li{
+    width: 45%;
+}
+.photo-text{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 8px;
+}
+.text1{
+    display: flex;
+    background-color: darkred;
+    color: #e9e9e9;
+    padding: 10px;
+}
+.text1 p{
+    font-size: 20px;
+    margin-right: 2px;
+}
+.text1 span{
+    margin-top: 5px;
+}
+.text2{
+    margin-top: 4px;
+}
+.text2 h1{
+    font-family: 'Kosugi Maru', sans-serif;
+    white-space: nowrap;
+}
+@media screen and (max-width: 800px){
+    .text2 h1{
+        font-size: 25px;
+    }
+}
+.text2 p{
+    font-size: 10px;
+    color: darkred;
+}
+.photo li figure{
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
+}
+.photo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+.news{
+    width: 90%;
+    margin: 50px auto;
+    padding-top: 60px;
+}
+.news h1{
+    position: relative;
+    text-align: center;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.news ul{
+    margin-top: 40px;
+}
+.news ul li{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid darkred;
+    padding: 10px 0;
+}
+.news-photo{
+    margin-right: 20px;
+}
+.day{
+    display: flex;
+    align-items: center;
+}
+.pink{
+    background-color: lightcoral;
+    padding: 2px 10px;
+}
+.white{
+    background-color: #e9e9e9;
+    padding: 2px 10px;
+}
+.dtail h4{
+    padding: 15px 0;
+}
+.news-photo2 img{
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.map iframe{
+    width: 100%;
+    height: 400px;
+}
+.end{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: burlywood;
+    width: 100%;
+    height: auto;
+    padding: 25px 40px;
+    margin-top: 0;
+}
+.logo2{
+    display: flex;
+    align-items: center;
+}
+.logo2 h1{
+    padding: 15px 25px;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: darkred;
+    text-align: center;
+    font-family: 'Yuji Mai', serif;
+}
+.onsen{
+    display: flex;
+    align-items: center;
+}
+.onsen-name{
+    margin-left: 20px;
+    text-align: center;
+    color: #fff;
+}
+.onsen-name p{
+    font-size: 12px;
+    margin-bottom: 8px;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.onsen-name h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 15px;
+    white-space: nowrap;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+.icon:hover{
+    opacity: 0.7;
+}
+.icon img{
+    width: 30px;
+}
+.copy{
+    bottom: 0;
+    right: 0;
+    background-color: #666;
+    padding: 5px;
+    text-align: center;
+}
+.copy p{
+    color: #fff;
+    font-size: 12px;
+}
